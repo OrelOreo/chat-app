@@ -8,7 +8,15 @@
 <body>
     <p>Welcome to the chat app.</p>
 
-    <script src="/socket.io/socket.io.js" /></script>
+    <form method="post" id="message-form">
+        <input type="text" name="message" placeholder="message">
+        <button type="submit" id="submit-btn">Submit</button>
+    </form>
+
+    <button id="send-location">Send location</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
